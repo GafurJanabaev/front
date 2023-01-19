@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 200px;
+    margin: 30px;
+    background-color: rgb(125, 205, 241);
+    display: flex;
+    /* justify-content:flex-start;  bul ata teginin ishindegi contentlerdin' gorizantalniy jaylasiwin belgileydi. */
+    justify-content:center ;
+    /* align-items: stretch;  bul ata teginin ishindegi contentlerdin' vertikalniy jaylasiwin belgileydi.  */
+    align-items:stretch;
+    /* gap:100px; bul ata teginin ishindegi contentlerdin' arasin tendey qilip ashiwdi belgileydi. */
+    gap: 10px 100px;
+    /*  flex-wrap: wrap; bul ata teginin ishindegi contentler kop bolsa olardi bir ata class ishine barin jaylastirip beredi. */
+     flex-wrap: wrap;
+     /*  flex-direction: row; bul ata teginin ishindegi contentler kop bolsa olardi bir ata class ishine barin row bolsa qatarma qatar, colum bolsavertikalniy jaylastirip beredi. */
+    flex-direction: row;  
+}
+.item{
+    
+    width: 100px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.item1{
+   background-color: brown;
+}
+
+.item2{
+    background-color: rgb(27, 19, 136);
+ }
+
+ .item3{
+    background-color: rgb(197, 250, 7);
+ }

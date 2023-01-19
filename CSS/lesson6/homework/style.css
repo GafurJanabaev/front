@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+.container {
+  width: 600px;
+  height: 500px;
+  background-color: aqua;
+  margin: 50px;
+  border-radius: 10px;
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Media Queriy */
+@media screen and (max-width:1355px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+}
+@media screen and (max-width:690px) {
+    .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+}
+
+/* animatoin */
+.box {
+  width: 450px;
+  height: 80px;
+  margin: 15px 0;
+  background-color: blueviolet;
+  border-radius: 10px;
+  animation-name: Home;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+@keyframes Home {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 100px;
+    background: linear-gradient(green, rgb(15, 170, 85), coral);
+  }
+}
+.box1 {
+  width: 450px;
+  height: 80px;
+  margin: 15px 0;
+  background-color: rgb(14, 226, 60);
+  border-radius: 10px;
+  animation-name: Home1;
+  animation-duration: 1005ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+@keyframes Home1 {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 100px;
+    background: linear-gradient(red, blue, yellow);
+  }
+}
+.box2 {
+  width: 450px;
+  height: 80px;
+  margin: 15px 0;
+  background-color: rgb(112, 33, 119);
+  border-radius: 10px;
+  animation-name: Home2;
+  animation-duration: 1010ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+
+@keyframes Home2 {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 100px;
+    background: linear-gradient(red, rgb(218, 218, 184), green);
+  }
+}
+
+.box3 {
+  width: 450px;
+  height: 80px;
+  margin: 15px 0;
+  background-color: rgb(37, 10, 190);
+  border-radius: 10px;
+  animation-name: Home3;
+  animation-duration: 1015ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+
+@keyframes Home3 {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 100px;
+    background: linear-gradient(rgb(2, 235, 2), rgb(11, 148, 153), yellow);
+  }
+}
+
+.box4 {
+  width: 450px;
+  height: 80px;
+  margin: 15px 0;
+  background-color: rgb(224, 18, 36);
+  border-radius: 10px;
+  animation-name: Home4;
+  animation-duration: 1020ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+
+@keyframes Home4 {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 100px;
+    background: linear-gradient(blue, green, red);
+  }
+}
+
+
+/* Tort muyesh animatsiya */
+
+.container1 {
+  width: 600px;
+  height: 500px;
+  background-color: aqua;
+  margin: 50px;
+  border-radius: 10px;
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content1 {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  margin: 10px;
+  animation-name: CIRCLEe;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+@keyframes CIRCLEe {
+  from {
+    transform: rotate(360deg);
+    background-color: blue;
+  }
+  to{
+    border-radius: 20px;
+    background-color: rgb(255, 72, 0);
+  }
+}

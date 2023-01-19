@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100px ;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid black;
+    margin: 100px;
+    position: relative;
+    animation-name: lol;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes lol{
+    0%{
+        width: 100px;
+        height: 100px;
+        left: 10px;
+    }
+    20%{
+        left: 50px;
+        background-color: chartreuse;
+    }
+    40%{
+        left: 100px;
+        background-color: coral;
+    }
+    60%{
+        left: 200px;
+    }
+    80%{
+        left: 400px;
+    }
+    100%{
+        left: 600px;
+    }
+}
+/* .box{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation-name: max;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} */
+/* @keyframes max{
+    0%{
+        background-color: blue;
+        transform: scale(1);
+        transform: matrix3d(30deg);
+    }
+    50%{
+        background-color: chocolate;
+        transform: scale(1.5);
+        transform: matrix3d(60deg)
+    }
+    100%{
+        background-color: chartreuse;
+        transform: scale(2);
+        transform: matrix3d(90deg);
+    }
+    
+} */
